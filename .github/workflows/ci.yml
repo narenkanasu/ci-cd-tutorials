@@ -1,0 +1,26 @@
+name: My First CI Pipeline
+
+# Trigger: Run this pipeline every time someone pushes to the main branch
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  # Job 1: Test the application
+  run-tests:
+    runs-on: ubuntu-latest # The operating system provided by GitHub to run your code
+    
+    steps:
+    - name: Checkout repository code
+      uses: actions/checkout@v4 # Copies your code onto the GitHub runner
+
+    - name: Set up Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm ci # Fast install for automated environments
+
+    - name: Run Unit Tests
+      run: npm test
