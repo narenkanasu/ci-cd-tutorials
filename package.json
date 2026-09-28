@@ -1,0 +1,12 @@
+{
+  "name": "ci-cd-tutorials",
+  "version": "1.0.0",
+  "description": "CI/CD tutorials repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
