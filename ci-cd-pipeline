@@ -13,3 +13,18 @@ It comes in two forms:
 - Continuous Delivery: Code changes are automatically built, tested, and pushed to a staging environment that mimics production. However, a human must manually click a button to approve and release it to actual end users.
 - Continuous Deployment: Code changes that pass all automated tests go live to production automatically with zero human intervention. 
 
+Core Components of a Pipeline
+A typical CI/CD setup relies on a few key building blocks:
+- Version Control System (VCS): Tools like GitHub, GitLab, or Bitbucket where your source code lives. 
+- Pipeline Configuration File: A text file (usually written in YAML) stored inside your repository that defines what steps run and when (e.g., .github/workflows/ for GitHub Actions). 
+- CI/CD Runner / Server: The engine that executes your build and test scripts (such as GitHub Actions runners, Jenkins, or GitLab Runners). 
+- Artifacts & Registries: Compiled code packages or Docker containers stored safely before deployment. 
+
+Popular CI/CD Tools
+You can choose from several tools depending on where your code is hosted:
+- GitHub Actions: Built directly into GitHub; great for beginners working on GitHub repositories.
+- GitLab CI/CD: Built-in automation native to GitLab projects.
+- Jenkins: An open-source automation server that offers deep customization but requires manual server setup.
+- CircleCI: A cloud-based CI/CD platform that integrates cleanly with multiple version control systems
+
+View: https://www.youtube.com/watch?v=B7GM6F3BP6A&t=25
